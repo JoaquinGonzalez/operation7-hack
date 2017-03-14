@@ -261,9 +261,7 @@ public:
 static IDirect3D9* (WINAPI* Direct3DCreate9Next)(UINT SDKVersion)
 		= Direct3DCreate9;
 
-IDirect3D9*
-WINAPI
-Direct3DCreate9Callback(UINT SDKVersion)
+IDirect3D9* WINAPI Direct3DCreate9Callback(UINT SDKVersion)
 {
 	IDirect3D9* pv = Direct3DCreate9Next(SDKVersion);
 
